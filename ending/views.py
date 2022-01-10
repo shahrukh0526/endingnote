@@ -44,7 +44,8 @@ def signupfin(request):
             around_info = "例) 使用していたSNSのIDとパスワードは・・・",
             family_info = "例) 私の形見は〇〇に受け取ってほしい・・・",friends_info ="例) 〇〇との思い出は・・・",
             pets_info = "例) ペットの性格は・・・",medical_info = "例) 介護の費用はここから出してほしい・・・",
-            inherit_info ="例) 遺言書の保管場所は・・・",contact_info = "例) 私の親友の連絡先は・・・",message_info ="例) ありがとう・・・",email=request.email)
+            inherit_info ="例) 遺言書の保管場所は・・・",contact_info = "例) 私の親友の連絡先は・・・",message_info ="例) ありがとう・・・")
+        ending.email=user
         ending.save()
         return redirect('login')
 
